@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Black Cat ☕</a>
+            <div class="nav-links">
+                <a href="#about">О нас</a>
+                <a href="#menu">Меню</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </nav>
+    </header>
+    <h1 id="zag">Меню Ваше кафе</h1>
+    <img id="logo"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAnFBMVEX////0ACcAAABlYmPzAAD0ABb909b5kpf0AB73Xmn8zdEjHyD8/PzKysrY2Njg4OBXVVV8e3sxLi+SkZHs7OxraWpPTU21tbURCgyenZ3CwcGtrKx0c3Pz8/MqJie8u7sYExT/5ehCP0A6NzeFhIT6p6z2UV792971LEP5naD3c3v+xsj5iY/8r7X/9fb0GDD4fYT1JDn3aXX1P1E7LZQCAAAEEElEQVRIiZ2XaXfjKgyGNXIykxZjbIMXvMSOTdJ2usxy//9/u8L7kn7oqOckFPNYIIkXAmCcf7AEIPDgH0xmEMH1YbLb0/zM9TIuFmPfb8thBf09H0+jHb6PVBKHhZQxFmoEfxzmYS8QkMeH07fRJhCR940c5Qgep2HHaynJ488dqJyQT1OMoh14eBU5gW/HDZggky220u0Jo3fgo5fQZK8b0JMhBjlDTIfYnNUWvFQcpHrfgEGUuQIz5clhvpXZgh+5B7l4PaxB5VNwltkt0y1I7iDh3zdgJMEvlsmGVG1BUwKvLmtQIWTIF+DZbbM1+AsiF7z8Y+MxBYPlAsySuFmBpxs45EDCBnREXMHSnDZYgw9AYSgD2EQ1102utbbTE10j7EI1g8ff1iPV3J+NR2wK6WuMZYCtCYzToF6Dbx3owO20AmuFTWvCM2Zxc27MWUixXuPx6tq5+4sq78BYoJ+7FF3XKyl4ISResQbflew8/j6uQJmxOIfKibvkaxqjkxV4ePV0t8Yfa9ALYurPJH2IBGy9xusCODxx+yZTXtcgpPXZ5Y3DuAjQJsZt1yV3uCS2QJZV3oMR1oiok9BXGhPwfLkBQdv85N7jYQ2qgnmUujLhJZgWfONuQWPnXvGnDQjChxCxySV5jqDdKQAU9lV8Uayj5jCqAnY2gfRCBect+NzlHyi0OzCoMpmes25P8WID9jVOKzJ7MKPtkcb9Fmm8Lfi3B0muvm1BCFnVBF1Lx7ABhxq3pfN82oKK8pHTlwhCdwe+QDSAtx0IqqF4gkR/2pUzeC3NAP7dg1BGWCkMyj1IcqwHcJLkGdRYszSu01lEZvDRy7ueCF7ugYjMVt4d8JJlXY8p3/egyjivmRKz3M3gR9736lmSF2ukWkRcno8zSETXk/PHu6BP4nEfNP2hmWWXe6BAifoe+GdI41KSl2CBYjpUl+Dpv6FwQJAkjzaDAotyBb6NY24wVAVJ8uNoH9M4txJqBV7GMU+jx3HKO3PVJw9GwPnk+WfmBjtQx75PJ46J/djn1LYWSxuG+Fy3/rAzldmBFdZpQwqFWHDB6po1DaPtFVHpOc5UD2LM0mKNyCjpWWr3Ivh1amx0hYO179o9Ngzi+dAIxr0KHoGlHm5HKesqRyW20zbGuk3GhpyilyMLA+yvJwJZqhO6XsR1vbwSWCUeQzJdMYqa1eSIDy+pOwGhjalX4ORock0aleqWsdTOLKhrv0qSksA6WIGTLHRnj7WSVuNl5MkqWzs6cmq22l9zML1xJjlNU4FDn7J7SX+HUKQiaJLEjO+f0jcmVNKSSNbcmL7O3P7T9wvbgdNNFCblK4clCE4m+oanqD0FTfEkz6bYz5L5xWKdC6b40oXeLO5r8gu/HKJeiP4H6i5NvtR4I6YAAAAASUVORK5CYII="
+        alt="">
+    
+
+    <div id="menuButtons">
+        <button id="add">Добавить</button>
+        <button id="sortOnName">Сортировать по названию</button>
+        <button id="sortOnMassCost">Сортировать по массе и цене</button>
+        <button id="sortOnCost1">Сортировать по цене(от дешевого к дорогому)</button>
+        <button id="sortOnCost2">Сортировать по цене(от дорогого к дешевому)</button>
+
+    </div>
+
+
+    <div id="spisok">
+        <div class="card">
+
+        </div>
+    </div>
+
+    <div id="addProduct">
+        <h2>Добавление данных товара</h2>
+        <p id="addName">Название продукта: <input type="text" id="inputName"></p>
+        <p id="addImg">Ссылка на фото: <input type="text" id="inputImg"></p>
+        <p id="addType">Описание: <input type="text" id="inputType"></p>
+        <p id="addMass">Масса блюда: <input type="text" id="inputMass"></p>
+        <p id="addCost">Цена: <input type="text" id="inputCost"></p>
+        <button id="addOk">Сохранить</button>
+        <button id="addCancel">Отмена</button>
+    </div>
+
+
+
+    <div id="editProduct">
+        <h2>Изменение данных о товаре</h2>
+        <p id="editName">Название продукта: <input type="text" id="editInputName"></p>
+        <p id="editImg">Ссылка на фото: <input type="text" id="editInputImg"></p>
+        <p id="editType">Описание: <input type="text" id="editInputType"></p>
+        <p id="editMass">Масса продукта: <input type="text" id="editInputMass"></p>
+        <p id="editCost">Цена: <input type="text" id="editInputCost"></p>
+        <button id="editOk">Сохранить</button>
+        <button id="editCancel">Отмена</button>
+    </div>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
