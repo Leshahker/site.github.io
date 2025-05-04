@@ -46,7 +46,7 @@ nav {
 }
 
 .banner {
-    background: url('https://vse-kursy.by/uploads/posts/2017-11/medium/1509542594_zerno.jpeg')  no-repeat center/cover;
+    background: url('https://vse-kursy.by/uploads/posts/2017-11/medium/1509542594_zerno.jpeg') no-repeat center/cover;
     height: 70vh;
     font-size: 40px;
     display: flex;
@@ -60,10 +60,10 @@ nav {
 
 #deviz {
     background-color: #0000007c;
-    
+
     border-radius: 15px;
-    
-    
+
+
 }
 
 .btn {
@@ -135,36 +135,7 @@ nav {
 }
 
 /* Адаптив */
-@media (max-width: 768px) {
-
-    footer p,
-    .developer-info {
-        text-align: center !important;
-    }
-
-    .footer-divider {
-        width: 50%;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .menu-grid,
-    .contacts-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-grid {
-        gap: 1.5rem;
-        /* Уменьшаем отступ на мобильных */
-        padding: 0 1rem;
-    }
-
-    .about-item {
-        padding: 1.5rem;
-    }
-}
+@media (max-width: 768px) {}
 
 
 
@@ -359,8 +330,17 @@ footer {
     text-align: center;
 }
 
+header>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+.oe_wrapper {
+    padding-left: 140px;
+    margin-bottom: 80px;
+}
 
 
 .footer-divider {
@@ -485,89 +465,201 @@ footer p {
 
 /* Адаптивность */
 @media (max-width: 768px) {
+
+    footer p,
+    .developer-info {
+        text-align: center !important;
+    }
+
+    .footer-divider {
+        width: 50%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-grid,
+    .contacts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .about-item {
+        padding: 1.5rem;
+    }
+
+    .oe_wrapper {
+
+        padding-left: 0 1rem;
+
+    }
+
+    .oe_wrapper {
+        padding-left: 0;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+    header>nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .logo {
+        flex-shrink: 0;
+    }
+
+    .nav-links {
+        display: flex !important;
+        gap: 15px;
+    }
+
+    .oe_menu {
+        flex-direction: column !important;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .oe_menu>li {
+        width: 100% !important;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .oe_menu>li>a {
+        padding: 20px;
+        border-right: none !important;
+    }
+
+
+
     .gallery-item {
         width: 100%;
     }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        border-bottom: 1px solid #444;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
 }
 
 
 #carouselExampleAutoplaying {
-    width: 80%; 
-    height: 10%;  
-    margin: 0 auto;  
+    width: 80%;
+    height: 10%;
+    margin: 0 auto;
 }
 
 #carouselExampleAutoplaying .carousel-item img {
-    object-fit: cover;  /* Обрезаем изображение, чтобы оно заполнило контейнер */
-    width: 100%;  /* Изображение заполняет ширину слайдера */
-    height: 100%;  /* Изображение заполняет высоту слайдера */
-    border-radius: 15px;  /* Добавим скругления, если нужно */
+    object-fit: cover;
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 15px;
+
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #000;  /* Цвет иконок управления */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+
 }
 
 
-/* Адаптивность для мобильных устройств */
+
 @media (max-width: 768px) {
-    /* Ширина слайдера */
+
+
     #carouselExampleAutoplaying {
         width: 100%;
-        height: 200px; /* Снизим высоту слайдера на мобильных */
+        height: 200px;
+
     }
 
     .about-container {
-        flex-direction: column;  /* Переводим блоки на мобильные устройства в колонку */
-        padding: 0 1rem; /* Уменьшаем отступы */
+        flex-direction: column;
+        padding: 0 1rem;
+
     }
 
     .about-item {
         padding: 1rem;
-        width: 100%; /* Делаем блоки в секции "О нас" на всю ширину */
+        width: 100%;
+
     }
 
     .about-item h3 {
-        font-size: 1.2rem;  /* Уменьшаем размер шрифта заголовков */
+        font-size: 1.2rem;
+
     }
 
     .about-item p {
-        font-size: 1rem;  /* Уменьшаем размер текста */
+        font-size: 1rem;
+
     }
 
-    /* Галерея */
+
     .gallery-item {
-        width: 100%; /* Галерея будет по одному изображению в ряд */
+        width: 100%;
     }
 
-    /* Контакты */
+
     .contacts-item {
-        width: 100%; /* Делаем элементы контактов на всю ширину */
+        width: 100%;
     }
 
-    /* Скрытие меню на мобильных */
+
     .nav-links {
-        display: none;  /* Скрываем обычное меню */
+        display: none;
     }
 
-    /* Адаптация иконок в меню */
     .oe_menu>li>a i {
         font-size: 24px;
     }
 
-    /* Уменьшаем отступы в меню */
+
     .oe_menu>li {
-        width: 100%;  /* Меню на всю ширину */
+        width: 100%;
         height: auto;
         font-size: 20px;
     }
 
     /* Подменю */
     .submenu {
-        width: 100%;  /* Подменю также на всю ширину */
+        width: 100%;
     }
 
-    /* Стили для шапки */
     header {
         padding: 10px;
         margin: 10px;
@@ -575,8 +667,8 @@ footer p {
     }
 
     nav {
-        flex-direction: column; /* Меню становится вертикальным */
-        align-items: center;  /* Центрируем элементы меню */
+        flex-direction: column;
+        align-items: center;
         font-size: 20px;
     }
 
@@ -584,67 +676,69 @@ footer p {
         font-size: 20px;
     }
 
-    /* Галерея */
+
     .gallery-item img {
-        width: 100%;  /* Изображения галереи заполняют контейнер */
+        width: 100%;
         height: auto;
     }
 
-    /* Уменьшаем высоту карты */
     .about-map iframe {
-        height: 300px;  /* Снижена высота карты на мобильных */
+        height: 300px;
     }
 
-    /* Оформление кнопок */
     .btn {
-        font-size: 16px; /* Уменьшаем размер шрифта в кнопках */
-        padding: 8px 20px; /* Уменьшаем отступы */
+        font-size: 16px;
+        padding: 8px 20px;
+
     }
 
-    /* Стили для footer */
     footer {
         padding: 15px;
         text-align: center;
     }
 
-    /* Скрываем иконки соцсетей */
+
     .social-links {
-        display: none; /* Скрытие социальных иконок на мобильных */
+        display: none;
+
     }
 
     .footer-top {
         margin-bottom: 10px;
     }
 
-    /* Убираем лишние отступы */
+
     .developer-info {
         text-align: center;
     }
 }
 
-/* Стили для очень маленьких экранов (например, телефоны) */
+
 @media (max-width: 480px) {
     .banner {
-        font-size: 25px;  /* Меньше текст в баннере */
+        font-size: 25px;
+
         padding: 15px;
     }
 
     .btn {
-        font-size: 14px;  /* Уменьшаем размер кнопки */
+        font-size: 14px;
         padding: 8px 15px;
     }
 
     .about-item h3 {
-        font-size: 1.1rem;  /* Еще меньше размер заголовков */
+        font-size: 1.1rem;
+
     }
 
     .about-item p {
-        font-size: 0.9rem;  /* Еще меньше текст */
+        font-size: 0.9rem;
+
     }
 
-    /* Уменьшаем размер карт в галерее */
     .gallery-item img {
         width: 100%;
-        height: 200px;  /* Устанавливаем фиксированную высоту */
+        height: 200px;
+
     }
 }
